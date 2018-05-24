@@ -38,7 +38,7 @@ create table refs_info (
   refs_reference varchar(50) DEFAULT NULL,
 
   refs_illust varchar(10) DEFAULT NULL,
-  foreign key (workno) references work(workno)
+  foreign key (workno) references work(workno),
   primary key (refs_publication, refs_reference)
 );
 
@@ -69,7 +69,8 @@ CREATE TABLE finalData (
   refs_reference varchar(16) DEFAULT NULL,
 
   foreign key (workno) references work(workno),
-  foreign key (ex_date,ex_place,ex_no) references exhib_info(ex_date,ex_place,ex_no)
+  foreign key (ex_date,ex_place,ex_no) references exhib_info(ex_date,ex_place,ex_no),
+  foreign key (refs_publication,refs_reference) references refs_info(refs_publication,refs_reference)
 );
 
 
