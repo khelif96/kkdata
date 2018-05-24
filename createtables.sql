@@ -26,7 +26,6 @@ create table work (
   place varchar(38) DEFAULT NULL,
   othertitle varchar(79) DEFAULT NULL,
   credit varchar(200) DEFAULT NULL,
-  owncountry varchar(33) DEFAULT NULL,
   ownerID int(11) DEFAULT NULL,
   primary key (workno),
   foreign key (ownerID) references ownerInfo(ownerID)

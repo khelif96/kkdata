@@ -3,8 +3,8 @@ SELECT credit, ownname, ownaddress, owncity,ownzip,owncountry,ownphone1
 FROM kkdatadb.kkdata6;
 
 
-INSERT INTO work (workno, artfirst, artlast, gertitle, engtitle, datemonth, dateyear, datetext, medium, dimh, dimw, place, othertitle, credit, owncountry)
-SELECT distinct workno, artfirst, artlast, gertitle, engtitle, datemonth, dateyear, datetext, medium, dimh, dimw, place, othertitle, credit, owncountry
+INSERT INTO work (workno, artfirst, artlast, gertitle, engtitle, datemonth, dateyear, datetext, medium, dimh, dimw, place, othertitle, credit)
+SELECT distinct workno, artfirst, artlast, gertitle, engtitle, datemonth, dateyear, datetext, medium, dimh, dimw, place, othertitle, credit
 FROM kkdatadb.kkdata6;
 
 
